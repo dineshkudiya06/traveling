@@ -2,30 +2,86 @@
  media query 
 ===================== */
 
+@media only screen and (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+    }
 
-@media only screen and (max-width: 480px) {
-    .navbar-menu {
+    .wrapper {
         padding: 0 20px;
     }
 
-    .mobile-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
+    .home-banner .sec-row {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .home-banner .sec-col {
         width: 100%;
-
-        background: #fde5b5;
-        padding: 100px 20px 0 20px;
-        height: 100%;
-        z-index: 1000;
-        transition: all 0.3s linear;
+        max-width: 548px;
     }
 
-    .mobile-menu li:nth-child(-n + 4) {
-        margin-bottom: 20px;
+    .home-banner .section-title-0 {
+        font-size: 48px;
+        line-height: 52px;
+        margin-bottom: 12px;
     }
 
-    .mobile-menu.mobile-menu-back {
-        right: 0;
+    .home-banner .section-desc-0 {
+        margin-bottom: 24px;
+    }
+
+    .home-banner {
+        padding: 10px 0 10px 0;
+        margin-bottom: 0px;
+    }
+
+    .home-banner .search-bar {
+        max-width: 470px;
+        height: 65px;
+    }
+
+    .home-banner input {
+        height: 65px;
+        font-size: 16px;
+    }
+
+    .home-banner .search-icon {
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .home-banner .search-icon img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .home-banner .section-title-0 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .home-banner .search-bar {
+        max-width: 470px;
+        height: 50px;
+    }
+
+    .home-banner input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .home-banner .search-icon {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 35px;
+        height: 35px;
     }
 }

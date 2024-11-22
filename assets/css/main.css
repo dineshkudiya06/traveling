@@ -262,6 +262,7 @@ header .book p {
 header .fa-bars {
     font-size: 25px;
     color: gray;
+    display: none;
 }
 
 
