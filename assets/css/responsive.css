@@ -58,6 +58,21 @@
         width: 23px;
         height: 23px;
     }
+
+    .section-title {
+        font-size: 32px;
+        color: var(--secondary);
+        line-height: 22px;
+    }
+
+    .categories .owl-nav {
+        top: -200px !important;
+    }
+
+    .categories .owl-prev, .owl-next {
+        width: 40px !important;
+        height: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -83,5 +98,29 @@
         right: 8px;
         width: 35px;
         height: 35px;
+    }
+
+    .categories .owl-nav {
+        display: none;
+    }
+
+    .categories .section-title {
+        margin-bottom: 20px;
+    }
+
+    .categories .section-desc {
+        margin-bottom: 22px;
+    }
+
+    .owl-carousel .owl-item .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owl-carousel .owl-item img {
+        display: block;
+        width: initial;
     }
 }
